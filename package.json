@@ -1,0 +1,12 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-styl": "^1.1.0",
+    "gulp-stylus": "^2.3.0"
+  },
+  "dependencies": {
+    "masonry-layout": "^4.0.0"
+  }
+}

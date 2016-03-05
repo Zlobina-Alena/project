@@ -1,0 +1,231 @@
+html, body
+    margin: 0
+    padding: 0
+    font-size: 1em/1.5em
+    
+.clr
+    clear: both
+.wrapper  
+    max-width: 768px
+    margin: 0 auto
+    padding: 40px 0
+
+.main
+    padding: 0 34px;
+    &__title
+        font-size: 2.5em
+        margin-bottom: 30px
+        text-transform: uppercase
+        border-bottom: 1px solid #000
+    &__img
+        max-width: 700px
+        position: relative
+        height: auto
+        img
+            max-width: 100%
+            height: auto
+        &--date
+            position:absolute
+            width: 160px
+            top: 20px
+            left: 20px
+            padding: 30px 0
+            text-align: center
+            font-size: 1.125em
+            line-height: 1em
+            background: rgba(255, 255, 255, .6)
+            span
+                font-size: 2em
+                
+    &__figurecaption
+        background: #fff
+        position: relative
+        padding: 20px 0
+        &:before
+            content: ''
+            position: absolute
+            left: 49%;
+            top: -23px
+            border: 10px solid transparent 
+            border-bottom: 10px solid #fff 
+            font-size: 0.8125em
+        &--title
+            margin: 0
+            padding: 0
+            color: #000
+
+        &--author
+            color: #acacac
+            margin: 0
+            padding: 0
+            
+.list
+    padding: 0 34px;
+    &:after
+        clear: both
+    &-item
+        max-width: 160px
+        width: 23%
+        height: auto
+        margin: 0 2.6666% 20px 0
+        float: left 
+        max-height: 105px
+        list-style-type: none
+        &--advertising
+            height: auto
+            max-height: 230px
+            float: right
+            margin: 0 0 35px 0
+        &:nth-child(11n+11)
+            margin: 0 0 20px 0
+        &:nth-child(15n+15)
+            margin: 0 0 20px 0
+        &:nth-child(26n+26)
+            margin: 0 0 20px 0    
+            
+        img
+            max-width: 100%
+            height: auto
+            overflow: hidden
+        .list__img--date
+            padding: 12% 0
+            text-align: center
+            font-size: 1.125em
+            line-height: 1em
+            span
+                font-size: 2em
+
+.navigation  
+    padding: 0 34px
+    ul
+        padding-left: 0
+    &__title
+        float: left
+        color: #848484
+        line-height: 35px
+        margin-right: 25px
+    &__item
+        display: inline-block
+        width: 35px
+        height: 35px
+        border-radius: 50%
+        text-align: center
+        line-height: 35px
+        &.active
+            background: #e6e6e6
+            font-weight: 600
+        &.next
+            width: auto
+            border-radius: 0
+            &:hover
+                background: none
+                
+        &:hover
+            background: #e6e6e6
+        a
+            display: block
+            width: 100%
+            height: 100%
+            color: #000
+            text-decoration: none
+            
+@media screen and (max-width: 480px)  
+    .main
+        padding: 0 20px
+        &__img--date 
+            position: absolute
+            width: 80px
+            top: 20px
+            left: 20px
+            text-align: center
+            font-size: 0.875em
+            line-height: 1em
+            background: rgba(255,255,255,0.6)
+            span
+                font-size: 1.125em
+        &__figurecaption 
+            display: none
+    .list
+        padding: 0 20px
+        &-item
+            max-width: 80px
+            width: 18%
+            min-height: 50px
+            height: auto
+            margin: 0 2% 10px 0
+            .list__img--date
+                padding: 12% 0
+                font-size: 0.875em
+                span
+                    font-size: 1.125em
+            &:nth-child(11n+11)
+                margin: 0 2% 10px 0
+            &:nth-child(15n+15)
+                margin: 0 2% 10px 0
+            &:nth-child(26n+26)
+                margin: 0 2% 10px 0  
+            &:nth-child(19n)
+                margin: 0 0 10px 0
+            &:nth-child(24n)
+                margin: 0 0 10px 0    
+            &--advertising 
+                max-width: 37%
+                width: 37%
+                height: 250px
+                margin-right: 0  
+                &.second
+                    display: none
+
+@media screen and (max-width: 320px)
+    .main
+        padding: 0 5px
+        &__title
+            font-size: 1.625em
+        &__img
+            width: 100%
+            &--date 
+                position: absolute
+                width: 80px
+                top: 5px
+                left: 5px
+                padding: 11px 0
+                text-align: center
+                font-size: 1.125em
+                line-height: 1em
+                background: rgba(255,255,255,0.6)
+
+    .list
+        padding: 0 5px
+        &-item
+            max-width: 73px
+            width: 23%
+            height: 48px
+            margin: 0 2% 5px 0
+            &:nth-child(7n)
+                margin: 0 2% 5px 0
+            &:nth-child(11n+11)
+                margin: 0 2% 5px 0
+            &:nth-child(15n+15)
+                margin: 0 2% 5px 0
+            &:nth-child(26n+26)
+                margin: 0 2% 5px 0
+            &:nth-child(19n)
+                margin: 0 2% 5px 0
+            &:nth-child(24n)
+                margin: 0 2% 5px 0
+            &:nth-child(4n+5)
+                margin: 0 0 5px 0 
+            &--advertising
+                display: none
+                    
+    .navigation
+        padding: 0 5px;
+        &__title  
+            display: none
+
+            
+                
+        
+            
+                    
+        
