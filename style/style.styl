@@ -65,22 +65,25 @@ html, body
         clear: both
     &-item
         max-width: 160px
-        width: 23%
+        width: 22.5%
         height: auto
-        margin: 0 2.6666% 20px 0
-        float: left 
+        margin: 0 2.333% 20px 0
+        display: inline-block
         max-height: 105px
         list-style-type: none
+        vertical-align: middle
         &--advertising
             height: auto
             max-height: 230px
             float: right
-            margin: 0 0 35px 0
-        &:nth-child(11n+11)
             margin: 0 0 20px 0
-        &:nth-child(15n+15)
+        &--advertisingxs    
+            display: none
+        &:nth-child(12)
             margin: 0 0 20px 0
-        &:nth-child(26n+26)
+        &:nth-child(16n)
+            margin: 0 0 20px 0
+        &:nth-child(27n)
             margin: 0 0 20px 0    
             
         img
@@ -88,7 +91,6 @@ html, body
             height: auto
             overflow: hidden
         .list__img--date
-            padding: 12% 0
             text-align: center
             font-size: 1.125em
             line-height: 1em
@@ -149,24 +151,24 @@ html, body
         padding: 0 20px
         &-item
             max-width: 80px
-            width: 18%
+            width: 17.8%
             min-height: 50px
             height: auto
-            margin: 0 2% 10px 0
+            margin: 0 1% 10px 0
             .list__img--date
                 padding: 12% 0
                 font-size: 0.875em
                 span
                     font-size: 1.125em
-            &:nth-child(11n+11)
-                margin: 0 2% 10px 0
-            &:nth-child(15n+15)
-                margin: 0 2% 10px 0
-            &:nth-child(26n+26)
-                margin: 0 2% 10px 0  
-            &:nth-child(19n)
+            &:nth-child(12n)
+                margin: 0 1% 10px 0
+            &:nth-child(16)
+                margin: 0 1% 10px 0
+            &:nth-child(27)
+                margin: 0 1% 10px 0  
+            &:nth-child(20)
                 margin: 0 0 10px 0
-            &:nth-child(24n)
+            &:nth-child(25)
                 margin: 0 0 10px 0    
             &--advertising 
                 max-width: 37%
@@ -198,25 +200,40 @@ html, body
         padding: 0 5px
         &-item
             max-width: 73px
-            width: 23%
-            height: 48px
+            width: 22%
+            height: auto
             margin: 0 2% 5px 0
-            &:nth-child(7n)
-                margin: 0 2% 5px 0
+ 
             &:nth-child(11n+11)
                 margin: 0 2% 5px 0
             &:nth-child(15n+15)
                 margin: 0 2% 5px 0
             &:nth-child(26n+26)
                 margin: 0 2% 5px 0
-            &:nth-child(19n)
+            &:nth-child(20)
                 margin: 0 2% 5px 0
+            &:nth-child(21)
+                margin: 0 0 5px 0
             &:nth-child(24n)
                 margin: 0 2% 5px 0
-            &:nth-child(4n+5)
+            &:nth-child(27n)
+                margin: 0 2% 5px 0 
+             &:nth-child(29)
+                margin: 0 0 5px 0     
+            &:nth-child(5)
                 margin: 0 0 5px 0 
+            &:nth-child(12)
+                margin: 0 0 5px 0 
+            &:nth-child(16n)
+                margin: 0 0 5px 0     
             &--advertising
                 display: none
+            &--advertisingxs
+                display: block
+                width: 100%
+                max-width: 100%
+                height: auto
+                margin: 0 0 5px 0
                     
     .navigation
         padding: 0 5px;
